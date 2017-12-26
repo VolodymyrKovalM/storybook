@@ -16,7 +16,7 @@ function sqrtNumber(num) {
 	}
 
 	if (num % 2 === 0) {
-		console.log(Math.sqrt(num));
+		console.log(num * num);
 	}
 }
 
