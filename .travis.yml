@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - stable
+script: npm run deploy
+branches:
+  only:
+  - master
+env:
+  SURGE_LOGIN: vladimmirkoval@gmail.com
+  SURGE_TOKEN: 89468d3af8ae8f24827885abaf157a6c
+deploy:
+  provider: surge
+  project: ./.out/
+  domain: vladimir-koval.surge.sh
