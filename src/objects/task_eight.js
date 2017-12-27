@@ -10,6 +10,10 @@
 	Instantiate Rabbit instance and call `run` method
 */
 
+/*
+	eslint-disable no-console
+*/
+
 import React from 'react';
 
 function runTask() {

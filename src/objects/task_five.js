@@ -4,6 +4,10 @@
 	- Loop through the properties and output their name and value
 */
 
+/*
+	eslint-disable no-console, guard-for-in, no-restricted-syntax
+*/
+
 import React from 'react';
 
 function run() {
@@ -15,7 +19,7 @@ function run() {
 		obj[props[i]] = props[i] + 1;
 	}
 
-	for (let prop in obj) {
+	for (const prop in obj) {
 		console.log(prop, obj[prop]);
 	}
 }

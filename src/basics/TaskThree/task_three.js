@@ -4,27 +4,37 @@
 	если его можно поделить на 2 без остатка.
 */
 
+/*
+	eslint-disable no-console
+*/
+
 import React from 'react';
 
 const n1 = 4;
 const n2 = 9;
 const s = 'str';
 
-function sqrtNumber(num) {
+export function sqruareNumber(num) {
 	if (typeof num !== 'number') {
 		throw new Error('It is not a number');
 	}
 
+	let result;
+
 	if (num % 2 === 0) {
-		console.log(num * num);
+		result = num * num;
+	} else {
+		result = 'The entered number can not be devided by 2 without a remainder';
 	}
+
+	return result;
 }
 
 const BasicsTaskThree = () => (
 	<div>
-		<button onClick={() => { sqrtNumber(n1); }}>Argument is 4</button>
-		<button onClick={() => { sqrtNumber(n2); }}>Argument is 9</button>
-		<button onClick={() => { sqrtNumber(s); }}>Argument is a string - str</button>
+		<button onClick={() => { console.log(sqruareNumber(n1)); }}>Argument is 4</button>
+		<button onClick={() => { console.log(sqruareNumber(n2)); }}>Argument is 9</button>
+		<button onClick={() => { console.log(sqruareNumber(s)); }}>Argument is a string - str</button>
 	</div>
 );
 

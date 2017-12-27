@@ -2,6 +2,10 @@
 	Выведите массив используя разные типы циклов.
 */
 
+/*
+	eslint-disable no-console, no-restricted-syntax
+*/
+
 import React from 'react';
 
 function outPutArray() {
@@ -32,8 +36,10 @@ function outPutArray() {
 
 	console.log('**************************\nfor in Loop');
 
-	for (let value in arr) {
-		console.log(arr[value]);
+	for (const value in arr) {
+		if (Object.prototype.hasOwnProperty.call(arr, value)) {
+			console.log(arr[value]);
+		}
 	}
 
 	console.log('**************************\nfor each Loop');

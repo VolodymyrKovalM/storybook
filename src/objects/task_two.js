@@ -6,6 +6,10 @@
 	- Make several calls to `drive` and output total mileage
 */
 
+/*
+	eslint-disable no-console
+*/
+
 import React from 'react';
 
 const ObjTaskTwo = () => {

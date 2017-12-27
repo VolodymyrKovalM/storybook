@@ -3,11 +3,15 @@
 	and find the longest word within the string.
 */
 
+/*
+	eslint-disable no-console
+*/
+
 import React from 'react';
 
 const s = 'You can check strings against regular expressions with';
 
-function findLongestWord(str) {
+export function findLongestWord(str) {
 	const words = str.split(' ');
 
 	const longest = words.reduce((longestWord, currentWord) => (

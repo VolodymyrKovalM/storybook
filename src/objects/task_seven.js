@@ -2,6 +2,10 @@
 	Modify solution for practical task 4 to share `list` method through prototype
 */
 
+/*
+	eslint-disable no-console
+*/
+
 import React from 'react';
 
 const mixin = {

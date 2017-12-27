@@ -5,13 +5,15 @@
 	Если аргумент не число, выведите в консоль ‘It is not a number’.
 */
 
-/* eslint-disable import/no-extraneous-dependencies, import/extensions */
+/*
+	eslint-disable import/no-extraneous-dependencies,
+	import/extensions, no-console, no-alert, no-restricted-globals,
+	no-else-return, consistent-return
+*/
 
 import React from 'react';
 
-function firstQuiz() {
-	const hour = +prompt('Enter time') || 9;
-
+export function firstQuiz(hour) {
 	if (typeof hour !== 'number') {
 		throw new Error('It is not a number');
 	}
@@ -21,14 +23,24 @@ function firstQuiz() {
 	}
 
 	if (hour > 8 && hour < 24) {
-		console.log('Hello');
+		const s = 'Hello';
+		console.log(s);
+		return s;
 	} else {
-		console.log('It is not good time for that');
+		const s = 'It is not good time for that';
+		console.log(s);
 	}
 }
 
 const BasicsTaskOne = () => (
-	<button onClick={firstQuiz}>Enter time</button>
+	<button onClick={() => {
+		let h = prompt('Enter time');
+		h = isNaN(+h) ? h : +h;
+		firstQuiz(h);
+	}}
+	>
+		Enter time
+	</button>
 );
 
 export default BasicsTaskOne;

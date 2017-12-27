@@ -1,21 +1,21 @@
 /* eslint-disable import/no-extraneous-dependencies, import/extensions */
-
+import 'babel-polyfill';
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
-import BasicsTaskOne from '../src/basics/task_one';
-import BasicsTaskTwo from '../src/basics/task_two';
-import BasicsTaskThree from '../src/basics/task_three';
-import BasicsTaskFour from '../src/basics/task_four';
-import BasicsTaskFive from '../src/basics/task_five';
-import BasicsTaskSix from '../src/basics/task_six';
-import BasicsTaskSeven from '../src/basics/task_seven';
+import BasicsTaskOne from '../src/basics/TaskOne/task_one';
+import BasicsTaskTwo from '../src/basics/TaskTwo/task_two';
+import BasicsTaskThree from '../src/basics/TaskThree/task_three';
+import BasicsTaskFour from '../src/basics/TaskFour/task_four';
+import BasicsTaskFive from '../src/basics/TaskFive/task_five';
+import BasicsTaskSix from '../src/basics/TaskSix/task_six';
+import BasicsTaskSeven from '../src/basics/TaskSeven/task_seven';
 
-import FuncTaskOne from '../src/functions/task_one';
-import FuncTaskTwo from '../src/functions/task_two';
-import FuncTaskThree from '../src/functions/task_three';
-import FuncTaskFour from '../src/functions/task_four';
-import FuncTaskFive from '../src/functions/task_five';
+import FuncTaskOne from '../src/functions/TaskOne/task_one';
+import FuncTaskTwo from '../src/functions/TaskTwo/task_two';
+import FuncTaskThree from '../src/functions/TaskThree/task_three';
+import FuncTaskFour from '../src/functions/TaskFour/task_four';
+import FuncTaskFive from '../src/functions/TaskFive/task_five';
 
 import ObjTaskOne from '../src/objects/task_one';
 import ObjTaskTwo from '../src/objects/task_two';

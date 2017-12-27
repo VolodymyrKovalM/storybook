@@ -3,9 +3,13 @@
 	- Make this function be able to take array as argument.
 */
 
+/*
+	eslint-disable no-console
+*/
+
 import React from 'react';
 
-function argsSum(...args) {
+export function argsSum(...args) {
 	let sum = 0;
 
 	if (args[0] instanceof Array) {

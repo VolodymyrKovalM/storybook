@@ -3,6 +3,10 @@
 	- Is there any other ways how to declare private variables in JavaScript ?
 */
 
+/*
+	eslint-disable no-console, no-undef
+*/
+
 import React from 'react';
 
 function privateVars() {

@@ -12,6 +12,10 @@
 	(use apply, call and bind to print the details of different entities).
 */
 
+/*
+	eslint-disable no-console
+*/
+
 import React from 'react';
 
 function run() {

@@ -7,6 +7,9 @@
 	- Mix in `list` method to these objects and call it
 */
 
+/*
+	eslint-disable no-console
+*/
 
 import React from 'react';
 

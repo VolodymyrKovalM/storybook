@@ -7,6 +7,10 @@
 	- Вызовите написанную функцию и передайте два созданных объекта и свойство для сравнения
 */
 
+/*
+	eslint-disable no-console
+*/
+
 import React from 'react';
 
 const obj1 = {

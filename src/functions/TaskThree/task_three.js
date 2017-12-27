@@ -8,14 +8,18 @@
 	- Convert it to celsius and output "NN°F is NN°C."
 */
 
+/*
+	eslint-disable no-console
+*/
+
 import React from 'react';
 
-function celsiusToFahrenheit(cel) {
+export function celsiusToFahrenheit(cel) {
 	const fahrenheits = Math.round(cel * 1.8 + 32);
 	return `${cel}&ordm;C is ${fahrenheits}&ordm;F`;
 }
 
-function fahrenheitToCelsius(f) {
+export function fahrenheitToCelsius(f) {
 	const celsius = Math.round((f - 32) / 1.8);
 	return `${f}&ordm;F is ${celsius}&ordm;C`;
 }

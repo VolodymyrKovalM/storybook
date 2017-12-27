@@ -5,6 +5,10 @@ import Films from './Films';
 import avatar from '../img/avatar.jpg';
 import './styles.scss';
 
+/*
+	eslint-disable no-alert
+*/
+
 class App extends Component {
 	constructor() {
 		super();
@@ -47,7 +51,7 @@ class App extends Component {
 			});
 
 			const previousPageData = await fetch(state.data.previous).then(res => res.json())
-				.catch(err => { alert(err) });
+				.catch(err => { alert(err); });
 
 			this.setState({
 				data: previousPageData,
@@ -81,7 +85,7 @@ class App extends Component {
 			});
 
 			const nextPageData = await fetch(state.data.next).then(res => res.json())
-				.catch(err => { alert(err) });
+				.catch(err => { alert(err); });
 			this.setState({
 				data: nextPageData,
 				herosInCurrentPage: nextPageData.results,
