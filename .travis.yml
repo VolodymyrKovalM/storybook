@@ -9,3 +9,4 @@ deploy:
   provider: surge
   project: ./.out/
   domain: vladimir-koval.surge.sh
+  skip_cleanup: true
