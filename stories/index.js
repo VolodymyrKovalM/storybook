@@ -31,7 +31,7 @@ import App from '../src/http/src/components/App';
 
 import './styles.scss';
 
-storiesOf('Base', module)
+storiesOf('Basics', module)
 	.add(
 		'Task one',
 		withInfo(`
