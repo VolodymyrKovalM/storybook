@@ -1,6 +1,9 @@
 # Storybook
 
-## Links
+## Travis profile
 
-[Travis profile](https://travis-ci.org/profile/VolodymyrKovalM)
-[Surge](https://vladimir-koval.surge.sh)
+[Profile link](https://travis-ci.org/profile/VolodymyrKovalM)
+
+## Published on Surge
+
+[Surge link](https://vladimir-koval.surge.sh)
