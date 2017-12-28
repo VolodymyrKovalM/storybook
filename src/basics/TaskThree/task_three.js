@@ -19,15 +19,7 @@ export function sqruareNumber(num) {
 		throw new Error('It is not a number');
 	}
 
-	let result;
-
-	if (num % 2 === 0) {
-		result = num * num;
-	} else {
-		result = 'The entered number can not be devided by 2 without a remainder';
-	}
-
-	return result;
+	return num % 2 === 0 ? num * num : 'The entered number can not be devided by 2 without a remainder';
 }
 
 const BasicsTaskThree = () => (

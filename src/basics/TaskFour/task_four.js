@@ -11,15 +11,7 @@
 import React from 'react';
 
 export function checkNumbers(a, b) {
-	let result;
-
-	if (a > b) {
-		result = a - b;
-	} else {
-		result = a + b;
-	}
-
-	return result;
+	return a > b ? a - b : a + b;
 }
 
 const BasicsTaskFour = () => (

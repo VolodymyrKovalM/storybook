@@ -15,21 +15,21 @@ ul {
 .container {
 	height: 100vh;
 	padding: 35px 50px;
-	background: #eaeaea;
+	background: #EAEAEA;
 }
 
 .info-container {
 	max-width: 1450px;
 	padding: 20px;
 	margin: 0 auto;
-	background: #fff;
+	background: #FFF;
 	border-radius: 20px;
 }
 
 .info-title {
 	padding-bottom: 15px;
 	margin-bottom: 25px;
-	border-bottom: 1px solid #adcdef;
+	border-bottom: 1px solid #ADCDEF;
 	text-align: center;
 }
 
@@ -37,7 +37,8 @@ ul {
 	display: flex;
 	justify-content: space-around;
 
-	& > div, ul {
+	& > div,
+	ul {
 		width: 250px;
 		padding: 20px;
 		font-size: 18px;
@@ -65,20 +66,20 @@ ul {
 	button {
 		width: 110px;
 		padding: 10px 0;
-		color: #333333;
-		background: #fff;
-		border: 2px solid #0e76e4;
+		color: #333;
+		background: #FFF;
+		border: 2px solid #0E76E4;
 		text-align: center;
-		transition: all .2s ease-in;
+		transition: background-color 0.2s ease-in;
 		cursor: pointer;
 
 		&:hover {
-			color: #fff;
-			background: #0e76e4;
+			color: #FFF;
+			background: #0E76E4;
 		}
 
 		&:disabled {
-			border-color: #ccc;
+			border-color: #CCC;
 		}
 	}
 }

@@ -12,15 +12,7 @@ import React from 'react';
 const a = [12, 15, 4, 9, 45, 27];
 
 export function checkArray(arr, b) {
-	let result;
-
-	if (b) {
-		result = Math.max(...a);
-	} else {
-		result = Math.min(...a);
-	}
-
-	return result;
+	return b ? Math.max(...a) : Math.min(...a);
 }
 
 const BasicsTaskTwo = () => (
